@@ -30,11 +30,18 @@
     </p>
     <p>
         <label for="opis">Opis problema:*</label> <br>
-        <textarea name="opis" id="opis" cols="50" rows="7" maxlength="200" placeholder="Unesite opis do max 200 znakova." required></textarea>
+        <textarea name="opis" id="opis" cols="50" rows="7" maxlength="200" placeholder="Unesite opis do max 200 znakova." required></textarea><br>
+
+        <label for="datum">Datum prijave:</label> <br>
+        <input type="date" name="datum" id="datum" min="2022-1-1" max="2024-03-1">
+    <br>
+        <label for="dokument">Dokument:</label><br>
+        <input type="file" id="dokument" name="dokument"><br>
     </p>
     <p>
         <input type="submit" value="Pošalji">
         <input type="reset" value="Resetiraj sve podatke">
+        <input type="submit" value="Pošalji backup">
     </p>
     </form>   
 </body>
