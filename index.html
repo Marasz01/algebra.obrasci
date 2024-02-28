@@ -6,17 +6,34 @@
     <title>Obrasci</title>
 </head>
 <body>
-    <form name="kontakt_obrazac" action="" method="post" enctype="text/plain" autocomplete="off">
+    <form name="kontakt_obrazac" action="./index2.html" method="post" enctype="text/plain" autocomplete="off">
         <p>
-        <label for="ime">Ime i prezime:</label><br>
-        <input id="ime" name="imeiprezime" type="text" required>
+        <label for="ime">Korisnik:*</label><br>
+        <input id="ime" name="imeiprezime" type="text" placeholder="Ime i prezime" required>
     </p>
     <p>
-        <label for="email">E-mail:</label><br>
-        <input type="mail" name="email" id="email">
+        <label for="email">E-mail:*</label><br>
+        <input type="mail" name="email" id="email" placeholder="email@adresa.com" required><br>
+        <label for="tel">Telefon:</label><br>
+        <input type="tel" id="tel" name="tel" placeholder="+3859xxxxxxxx">
     </p>
     <p>
-        <label for=""></label>
+        <label>Spol:*</label> <br>
+        <input type="radio" name="spol" id="ono" required>
+        <label for="ono">Ne želim se indetificirati</label>
+        <br>
+        <input type="radio" name="spol" id="musko" required >
+        <label for="musko">M</label>
+        <br>
+        <input type="radio" name="spol" id="zensko" required>
+        <label for="zensko">Ž</label>
+    </p>
+    <p>
+        <label for="opis">Opis problema:*</label> <br>
+        <textarea name="opis" id="opis" cols="50" rows="7" maxlength="200" placeholder="Unesite opis do max 200 znakova." required></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Pošalji">
     </p>
 
 
